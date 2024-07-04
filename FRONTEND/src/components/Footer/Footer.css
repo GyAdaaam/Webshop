@@ -1,0 +1,89 @@
+/* Ez a CSS fájl a Footer.jsx stílusát tartalmazza.*/
+
+
+/* A footer tartalom stílusa. */
+.footerbody {
+    background-color: #101010;
+    color: #bbb;
+}
+
+/* A footer szövege (copyright) stílusa. */
+.footercopyright{
+    text-align: center;
+}
+
+/* A footerben megjelenő vonal mérete. */
+.medium {
+    border-top: 2px solid #aaa;
+}
+
+/* A footerben megjelenő iconok mérete. */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* A footerben megjelenő szöveg és linkek. */
+.footer-text,
+.custom-link {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* A footerben megjelenő linkek hover stílusa. */
+.footer-links {
+    padding-left: 0;
+}
+
+/* A footerben megjelenő linkek és li stílusa. */
+.footer-links li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* A footerben megjelenő linkek. */
+.footer-links .custom-link {
+    transition: color 0.3s ease;
+}
+
+/* A footerben megjelenő linkek hover stílusa. */
+.footer-links .custom-link:hover {
+    color: #fff;
+}
+
+/* A footerben megjelenő kapcsolat. */
+.footer-contact {
+    padding-left: 0;
+}
+
+/* A footerben megjelenő kapcsolat és felsorolás. */
+.footer-contact li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* A footerben megjelenő kapcsolat és linkek. */
+.footer-contact .custom-link {
+    transition: color 0.3s ease;
+}
+
+/* A footerben megjelenő kapcsolat és hover stílusa. */
+.footer-contact .custom-link:hover {
+    color: #fff;
+}
+
+/* Telefonos nézet. */
+@media (max-width: 767px) {
+    .col-md-3 {
+        text-align: center;
+      padding-bottom: 20px;
+    }
+    /* A kép mérete a footerben. */
+    .footerimage {
+      width: 150px;
+      height: auto; 
+    }
+}

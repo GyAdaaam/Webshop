@@ -1,0 +1,22 @@
+/* Ez a CSS fájl a Contact.jsx stílusát tartalmazza.*/
+
+/* A kapcsolat konténerének stílusai. */
+.contact-container{
+    background-color: #1C1C1C;
+    color: white;
+    height: 60vh; 
+    justify-content: center;
+}
+
+/* A telefonos nézet */
+@media (max-width: 576px) {
+    .textarea-sm {
+      height: 100px;
+    }
+}
+
+/* A kapcsolat gomb. */
+.contactus-button{
+    background-color: #E30419;
+    border: 0;
+}

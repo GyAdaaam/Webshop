@@ -1,0 +1,43 @@
+/* Ez a CSS fájl a UserProfile.jsx stílusát tartalmazza.*/
+
+/* A felhasználói profil tartalma. */
+.userprofile-container-fluid {
+  background-color: #131313;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  height: 100%;
+}
+
+/* A felhasználói kinézete. */
+.userprofiledata{
+  color: white;
+  background-color: #1C1C1C;
+  max-width: 300px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* lábléc */
+.footer{
+  max-height: 50vh;
+}
+
+/* A felhasználói profil gomb. */
+.userprofile-button{
+  background-color: #282525;
+  color: white;
+  font-size: 20px;
+  border: 0;
+}
+
+/* A hover */
+.userprofile-button:hover{
+  background-color: #E30419;
+  color: white;
+  font-size: 20px;
+  border: 0;
+}

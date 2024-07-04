@@ -1,0 +1,69 @@
+
+/* A search gamelist tartalom. */
+.search-gamelist-container {
+    background-color: #131313;
+    color: white;
+    padding-top: 25px;
+  }
+  
+/* A search gamelist címe. */
+  .search-searchresult{
+    color: white;
+    font-size: 30px;
+  }
+
+/* A search gamelist szűrő része. */
+  .search-gamelist-filter-section {
+    background-color: #222322;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+/* A search gamelist form. */
+  .search-gamelist-form-control {
+    background-color: #383938;
+    color: white;
+    font-size: 20px;
+  }
+
+/* A search gamelist egyéni kiválasztás. */
+  .search-gamelist-customSelect {
+    width: 100%;
+  }
+
+/* A search gamelist kártya. */
+  .search-gamelist-card {
+    background-color: #1C1C1C;
+  }
+
+/* A search gamelist kártya címe. */
+  .search-gamelist-card-title {
+    color: white !  important;
+    font-size: 20px;
+  }
+
+/* A search gamelist kártya szövege. */
+  .search-gamelist-card-text {
+    color: white;
+    font-size: 20px;
+  }
+
+/* A search gamelist kártya ára. */
+  .search-price-content{
+    color: white;
+  }
+
+/* A search gamelist kártya gombja. */
+  .search-gamelist-buy-button {
+    background-color: #E30419;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+  }
+
+/* A search gamelist kártya gombja hover esetén. */
+  .search-gamelist-buy-button:hover,
+  .search-gamelist-buy-button:active {
+    background-color: gray !important;
+  }

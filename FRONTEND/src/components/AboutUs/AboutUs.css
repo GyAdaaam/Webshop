@@ -1,0 +1,26 @@
+/* Ez a CSS fájl a AboutUs.jsx stílusát tartalmazza.*/
+
+/* A fő aboutus konténer stílusa */
+.aboutus-container{
+    background-color: #1C1C1C;
+    color: white;
+    height: 55vh; 
+    text-align: center;
+  }
+  
+/* Az aboutus logo */
+  .aboutus-logo{
+    height: 25vh;
+  }
+
+/* A telefonos nézet */
+  @media (max-width: 576px) {
+    /* Az aboutus logo */
+    .aboutus-logo{
+      height: 10vh;
+    }
+    /* A fő aboutus konténer stílusa */
+    .aboutus-container{
+      font-size: 15px;
+    }
+  }

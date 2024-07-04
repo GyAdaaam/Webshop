@@ -1,0 +1,101 @@
+/* Ez a CSS fájl a Cart.jsx stílusát tartalmazza.*/
+
+/* A kosár tartalom. */
+.cart-container {
+  padding-top: 25px;
+  background-color: #131313;
+  color: white;
+}
+
+/* A kosár címe. */
+.cart-card-title{
+  color: white;
+  font-size: 30px;
+}
+
+/* A kosár kártyákba lévő ár. */
+.cart-card-price{
+  color: white;
+  font-size: 25px;
+}
+
+/* A kosár kártyája. */
+.cart-cards{
+  background-color: #282525;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* A kosárban lévő termék darabszámának csökkentése. */
+.cart-decrease{
+  background-color: #282525;
+  color: red;
+  font-size: 30px;
+  border: 0;
+}
+
+/* A kosárban lévő termék darabszámának növelése. */
+.cart-increase{
+  background-color: #282525;
+  color: green;
+  font-size: 30px;
+  border: 0;
+}
+
+/* A rendelés adatok tartalom. */
+.order-summary{
+  background-color: #282525;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* A rendelés gomb. */
+.order-button{
+  min-width: 200px;
+  background-color: #E30419;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 25px;
+}
+
+/* A hover esemény. */
+.order-button:hover{
+  background-color: #E30419;
+}
+
+/* A kosárban lévő termék darabszámának megjelenítése. */
+.cart-quantity{
+  font-size: 20px;
+}
+
+/* A kosárban lévő termék teljes ára. */
+.cart-totalprice{
+  font-size: 20px;
+}
+
+/* A kosár törlés gomb. */
+.cart-deletebutton{
+  font-size: 20px;
+  background-color: #E30419;
+  width: 240px;
+}
+
+/* A lábléc */
+.footer{
+  min-height: 80vh;
+}
+
+/* A fejléc */
+.order-summary-title{
+  font-size: 25px;
+  padding-bottom: 25px;
+}

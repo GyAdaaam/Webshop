@@ -1,0 +1,47 @@
+/* Ez a CSS fájl a Home.jsx stílusát tartalmazza.*/
+
+/* A Home oldal háttérképe. */
+.home-background {
+    height: 99vh;
+    background-image: url(../../../public/images/Home/home-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+  
+  /* A Home oldal szövegének stílusa. */
+  .home-text {
+    padding-top: 15%;
+  }
+  
+  /* A Home oldal gombjának stílusa. */
+  .home-button {
+    margin-top: 20px;
+    max-width: 370px;
+    font-size: 25px;
+  }
+  
+  /* A Home oldal konténerének stílusa. */
+  .home-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Telefonos nézet. */
+  @media screen and (max-width: 768px){
+    /* A Home oldal szövegének stílusa. */
+    .home-text {
+      padding-top: 30%;
+    }
+    /* A Home oldal háttérképe. */
+    .home-background{
+      height: 50vh;
+    }
+    /* A Home oldal lábléc. */
+    .footer{
+      display: 1vh;
+    }
+  }

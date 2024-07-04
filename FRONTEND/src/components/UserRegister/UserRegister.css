@@ -1,0 +1,45 @@
+
+.userregister-container {
+  background-color: #1C1C1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.userregister-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.userregister-form label {
+  color: white;
+}
+
+.userregister-logo {
+  width: 150px;
+  height: auto;
+}
+
+.userregister-title {
+  color: white;
+}
+
+.userregister-error-message {
+  color: red;
+}
+
+.userregister-button {
+  width: 100%;
+  background-color: #E30419;
+}
+
+.userregister-register-text {
+  text-align: center;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .userregister-form {
+    max-width: 300px;
+  }
+}

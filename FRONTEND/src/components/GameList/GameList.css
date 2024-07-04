@@ -1,0 +1,60 @@
+/* Ez a CSS fájl a GameList.jsx stílusát tartalmazza.*/
+
+/* A játéklista konténerének stílusai. */
+.gamelist-container {
+  padding-top: 25px;
+  background-color: #131313;
+  color: white;
+}
+
+/* A játéklista szűrő szekció stílusai. */
+.gamelist-filter-section {
+  background-color: #222322;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+/* A játéklista szűrő szekció form. */
+.gamelist-form-control {
+  background-color: #383938;
+  color: white;
+  font-size: 20px;
+}
+
+/* A játéklista szűrő egyéni választó. */
+.gamelist-customSelect {
+  width: 100%;
+}
+
+/* A játéklista kártya stílusa. */
+.gamelist-card {
+  background-color: #1C1C1C;
+}
+
+/* A játéklista kártya címe. */
+.gamelist-card-title {
+  color: white;
+  font-size: 20px;
+}
+
+/* A játéklista kártya szövege. */
+.gamelist-card-text {
+  color: white;
+  font-size: 20px;
+}
+
+/* A játéklista kártya gombja. */
+.gamelist-buy-button {
+  background-color: #E30419;
+  color: white;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* A játéklista kártya gombja hover és active stílusa. */
+.gamelist-buy-button:hover,
+.gamelist-buy-button:active {
+  background-color: gray !important;
+}
