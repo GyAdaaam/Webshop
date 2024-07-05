@@ -62,7 +62,7 @@ export default function MyNavbar() {
               className="my-dropdown"
             >
               <Dropdown.Toggle variant="link" id="dropdown-basic-2" className="text-white ml-auto d-none d-lg-block">
-              <img src="./images/MyNavbar/Bag.png" alt="User Icon" width={35} />
+              <img src="./images/MyNavbar/Bag.png" alt="User Icon" width={20} />
               </Dropdown.Toggle>
               <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-100px' }}>
                 <Dropdown.Item href="#" className="dropdown-item-custom text-white">
@@ -81,7 +81,7 @@ export default function MyNavbar() {
               className="my-dropdown"
             >
               <Dropdown.Toggle variant="link" id="dropdown-basic-3" className="text-white ml-auto d-none d-lg-block">
-              <img src="./images/MyNavbar/HU.png" alt="User Icon" width={37} />
+              <img src="./images/MyNavbar/HU.png" alt="User Icon" width={20} />
               </Dropdown.Toggle>
               <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-100px' }}>
                 <Dropdown.Item href="#" className="dropdown-item-custom text-white">
@@ -116,7 +116,7 @@ export default function MyNavbar() {
               className="my-dropdown"
             >
               <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto d-none d-lg-block">
-                <img src="./images/MyNavbar/user3.png" alt="User Icon" width={35} />
+                <img src="./images/MyNavbar/user3.png" alt="User Icon" width={20} />
               </Dropdown.Toggle>
               <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-100px' }}>
                 <Dropdown.Item href="#" className="dropdown-item-custom text-white">
