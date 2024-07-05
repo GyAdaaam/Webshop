@@ -6,9 +6,19 @@ import './MyNavbar.css';
 export default function MyNavbar() {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdown2Open, setDropdown2Open] = useState(false);
+  const [dropdown3Open, setDropdown3Open] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const toggleDropdown2 = () => {
+    setDropdown2Open(!dropdown2Open);
+  };
+
+  const toggleDropdown3 = () => {
+    setDropdown3Open(!dropdown3Open);
   };
 
   useEffect(() => {
@@ -45,6 +55,44 @@ export default function MyNavbar() {
             </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
+            <Dropdown
+              show={!isMobileView && dropdown2Open}
+              onToggle={toggleDropdown2}
+              drop="down"
+              className="my-dropdown"
+            >
+              <Dropdown.Toggle variant="link" id="dropdown-basic-2" className="text-white ml-auto d-none d-lg-block">
+              <img src="./images/MyNavbar/Bag.png" alt="User Icon" width={35} />
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-100px' }}>
+                <Dropdown.Item href="#" className="dropdown-item-custom text-white">
+                  Elem 1
+                </Dropdown.Item>
+                <Dropdown.Item href="#" className="dropdown-item-custom text-white">
+                  Elem 2
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
+            <Dropdown
+              show={!isMobileView && dropdown3Open}
+              onToggle={toggleDropdown3}
+              drop="down"
+              className="my-dropdown"
+            >
+              <Dropdown.Toggle variant="link" id="dropdown-basic-3" className="text-white ml-auto d-none d-lg-block">
+              <img src="./images/MyNavbar/HU.png" alt="User Icon" width={37} />
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-100px' }}>
+                <Dropdown.Item href="#" className="dropdown-item-custom text-white">
+                  Elem 1
+                </Dropdown.Item>
+                <Dropdown.Item href="#" className="dropdown-item-custom text-white">
+                  Elem 2
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
             <Button
               id="mobileLoginButton"
               type="button"
