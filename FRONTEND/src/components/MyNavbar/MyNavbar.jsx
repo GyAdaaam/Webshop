@@ -5,7 +5,6 @@ import './MyNavbar.css';
 
 export default function MyNavbar() {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
-  const [showAuthButtons, setShowAuthButtons] = useState(isMobileView);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -14,9 +13,7 @@ export default function MyNavbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      const mobileView = window.innerWidth <= 768;
-      setIsMobileView(mobileView);
-      setShowAuthButtons(mobileView);
+      setIsMobileView(window.innerWidth <= 768);
     };
 
     window.addEventListener('resize', handleResize);
@@ -48,64 +45,40 @@ export default function MyNavbar() {
             </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            {showAuthButtons && (
-              <>
-                <Button
-                  id="mobileLoginButton"
-                  type="button"
-                  className="btn-light rounded-3 ms-3 mt-1 mb-1 border-1 border-secondary"
-                  onClick={toggleDropdown}
-                >
+            <Button
+              id="mobileLoginButton"
+              type="button"
+              className="btn-light rounded-3 ms-3 mt-1 mb-1 border-1 border-secondary d-lg-none"
+              onClick={toggleDropdown}
+            >
+              Bejelentkezés
+            </Button>
+            <Button
+              id="mobileRegisterButton"
+              type="button"
+              className="btn-light rounded-3 ms-3 mt-1 mb-1 border-1 border-secondary d-lg-none"
+              onClick={toggleDropdown}
+            >
+              Regisztráció
+            </Button>
+            <Dropdown
+              show={!isMobileView && dropdownOpen}
+              onToggle={toggleDropdown}
+              drop="down"
+              className="my-dropdown"
+            >
+              <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto d-none d-lg-block">
+                <img src="./images/MyNavbar/user3.png" alt="User Icon" width={35} />
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-10px' }}>
+                <Dropdown.Item href="#" className="dropdown-item-custom text-white">
                   Bejelentkezés
-                </Button>
-                <Button
-                  id="mobileRegisterButton"
-                  type="button"
-                  className="btn-light rounded-3 ms-3 mt-1 mb-1 border-1 border-secondary"
-                  onClick={toggleDropdown}
-                >
+                </Dropdown.Item>
+                <Dropdown.Item href="#" className="dropdown-item-custom text-white">
                   Regisztráció
-                </Button>
-                <Dropdown
-                  show={dropdownOpen}
-                  onToggle={toggleDropdown}
-                  drop="start"
-                  className="my-dropdown"
-                >
-                  <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto">
-                    <img src="./images/MyNavbar/user3.png" alt="User Icon" width={35} />
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-10px' }}>
-                    <Dropdown.Item href="#" className="dropdown-item-custom text-white">
-                      Bejelentkezés
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#" className="dropdown-item-custom text-white">
-                      Regisztráció
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </>
-            )}
-            {!isMobileView && (
-              <Dropdown
-                show={dropdownOpen}
-                onToggle={toggleDropdown}
-                drop="down"
-                className="my-dropdown"
-              >
-                <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto">
-                  <img src="./images/MyNavbar/user3.png" alt="User Icon" width={35} />
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#1F1F23', marginLeft: '-100px' }}>
-                  <Dropdown.Item href="#" className="dropdown-item-custom text-white">
-                    Bejelentkezés
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#" className="dropdown-item-custom text-white">
-                    Regisztráció
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            )}
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
