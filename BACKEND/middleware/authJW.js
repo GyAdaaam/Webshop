@@ -2,7 +2,7 @@
 
 // A szükséges modulok importálása.
 const jwt=require("jsonwebtoken");
-const config=require('../db/authconfig');
+const config=require('../config/authconfig');
 
 
 // A token ellenörzése.
