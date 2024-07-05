@@ -16,6 +16,7 @@ import SearchResultsComponent from './components/Search/SearchResultsComponent';
 import UserProfile from './components/UserProfile/UserProfile'; // Az App komponenshez tartozó UserProfile komponens importálása.
 import { useState, useEffect } from 'react'; // A useState, useEffect hookok importálása.
 
+
 // App komponens.
 function App() {
   // Az islogged állapot.

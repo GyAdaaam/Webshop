@@ -7,6 +7,7 @@ function generateSecretKey(){
 const secretKey = generateSecretKey();
 console.log(secretKey);
 
+
 module.exports={
     secret: secretKey
 }

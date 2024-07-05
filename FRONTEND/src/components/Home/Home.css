@@ -3,7 +3,6 @@
 /* A Home oldal háttérképe. */
 .home-background {
     height: 99vh;
-    background-image: url(../../../public/images/Home/home-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

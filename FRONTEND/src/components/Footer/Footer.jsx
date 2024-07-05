@@ -18,7 +18,7 @@ export default function Footer() {
           <div className='col-md-3'>
             {/* A lábléc tartalma. */}
             <img src='./images/Footer/footerlogo.png' alt="Footer Logo" className='footerlogo' title='A footer logója'/>
-            <p>Copyright © {currentYear} Játékbazár. Minden jog fenntartva. Általános Szerződési Feltételek, Adatvédelmi szabályzat, Cookie-beállítások.</p>
+            <p>Copyright © {currentYear} Videójátékbolt. Minden jog fenntartva. Általános Szerződési Feltételek, Adatvédelmi szabályzat, Cookie-beállítások.</p>
             <hr className='medium'></hr>
             <div className='row'>
                 <div className='col'>
@@ -49,7 +49,7 @@ export default function Footer() {
             {/* A lábléc kapcsolat. */}
             <h5>Kapcsolat</h5>
             <ul className="list-unstyled text-small">
-                <li>Játékbazár Kft.</li>
+                <li>Videójátékbolt Kft.</li>
                 <li>Széchényi Utca 12.</li>
                 <li>Kisváros, Magyarország</li>
                 <li><a className="custom-link" href="mailto:info@jatekbazar.hu">info@jatekbazar.hu</a></li>
@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="row">
           {/* A lábléc aljának tartalma. */}
           <div className="col-12">
-            <p className='footercopyright'>&copy; {currentYear} Játékbazár Kft. Minden jog fenntartva.</p>
+            <p className='footercopyright'>&copy; {currentYear} Videójátékbolt Kft. Minden jog fenntartva.</p>
           </div>
         </div>
       </div>

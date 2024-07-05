@@ -1,94 +1,58 @@
-/* Ez a fájl a MyNavbar komponens stíluslapja */
-
-
-/* A navbar form. */
-.mynavbar-search-form {
-  margin-right: 10px;
+.w-75 {
+  width: 75% !important;
 }
 
-/* A navbar kereső mező stílusa. */
-.mynavbar-search-form {
-  width: 500px;
-  padding-left: 25px;
-  margin-left: 140px;
-}
- 
-/* A navbar háttérszíne. */
-.mynavbar-bg-body-tertiary {
-  background-color: #222121 !important;
+.m-3 {
+  margin: 1rem !important;
 }
 
-/* A navbar linkjeinek színe. */
-.mynavbar-navbarlink {
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+body{
+  background-color: #131313;
+}
+
+
+.me-auto {
+  margin-right: auto !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.headercard {
+  background-color: #1F1F22;
+  padding: 1rem;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+.nav-link.button {
+  cursor: pointer;
+}
+
+#loginButton {
+  background-color: #f8f9fa;
+  border: 1px solid #6c757d;
+}
+
+#loginButton:hover {
+  background-color: #e2e6ea;
+}
+
+.custom-toggler .fa-bars {
+  color: #000;
+}
+
+.mynavbar-navbarlink{
   color: white;
-}
-
-/* A navbar user kép stílusa. */
-.mynavbar-navbar-user-img {
-  padding-left: 25px !important;
-}
-
-/* A navbar kapcsoló. */
-.custom-toggler.navbar-toggler {
-  border-color: white;
-}
-
-/* A navbar kapcsoló ikonja. */
-.custom-toggler .navbar-toggler-icon {
-  border-color: aliceblue;
-}
-
-/* A navbar kereső mezője. */
-.mynavbar-search-form .form-control {
-  background-color: #222121;
-  border: 1px solid white;
-  border-radius: 25px;
-  color: white;
-}
- 
-/* A navbar kereső gombja. */
-.mynavbar-search-btn {
-  background-color: #E30419;
-  color: white;
-  border-radius: 25px;
-  color: white;
-}
-
-/* A navbar kereső gombja hover eseménye. */
-.mynavbar-search-btn:hover{
-  background-color: #E30419;
-  color: white;
-}
-
-/* Telefonos nézet */
-@media (max-width: 576px) {
-  /* A navbar linkje. */
-  .mynavbar-navbarlink{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    align-items: center;
-  }
-  /* A navbar kereső mezője. */
-  .mynavbar-search-form {
-    width: 45%;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 120px;
-    margin-right: auto; 
-    padding-top: 25px;
-  }
-  /* A navbar kereső mezőjének a formja. */
-  .mynavbar-search-form .form-control {
-    margin-bottom: 25px;
-    background-color: #222121;
-    border: 1px solid white;
-    border-radius: auto;
-    margin-left: auto;
-    color: white;
-    text-align: center;
-  }
 }
