@@ -70,7 +70,7 @@ export default function MyNavbar() {
               <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto d-none d-lg-block">
                 <img src="./images/MyNavbar/user3.png" alt="User Icon" width={35} />
               </Dropdown.Toggle>
-              <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-10px' }}>
+              <Dropdown.Menu className="dropdown-menu-right animated fadeIn faster" style={{ backgroundColor: '#252525', marginLeft: '-100px' }}>
                 <Dropdown.Item href="#" className="dropdown-item-custom text-white">
                   Bejelentkezés
                 </Dropdown.Item>
