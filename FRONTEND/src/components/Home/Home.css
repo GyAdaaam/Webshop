@@ -37,10 +37,11 @@
     }
     /* A Home oldal háttérképe. */
     .home-background{
-      height: 50vh;
+      height: '550px';
+      width: auto;
     }
     /* A Home oldal lábléc. */
     .footer{
-      display: 1vh;
+      display: 5vh;
     }
   }
