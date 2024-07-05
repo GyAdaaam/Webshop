@@ -26,7 +26,7 @@ export default function MyNavbar() {
   }, []);
 
   return (
-    <Navbar expand="lg" className="w-75 m-3 rounded-4 ms-auto me-auto shadow-lg headercard">
+    <Navbar expand="lg" className="w-75 m-3 rounded-4 ms-auto me-auto headercard">
       <Container fluid>
         <Navbar.Brand href="/" className='mynavbar-navbarlink'><img src="images/MyNavbar/logo.png" className='float-right' width={40}/> Videójátékbolt </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='custom-toggler navbar-toggler ml-auto' style={{color: "white"}}>
@@ -59,7 +59,7 @@ export default function MyNavbar() {
                 </Button>
                 <Dropdown show={dropdownOpen} onToggle={toggleDropdown} drop="start">
                   <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto">
-                    <img src='./images/MyNavbar/user.png' alt="User Icon" width={20} />
+                    <img src='./images/MyNavbar/user3.png' alt="User Icon" width={35} />
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="#" className="btn-light rounded-3 mt-1 mb-1 border-1 border-secondary">
@@ -75,7 +75,7 @@ export default function MyNavbar() {
             {!isMobileView && (
               <Dropdown show={dropdownOpen} onToggle={toggleDropdown} drop="down">
                 <Dropdown.Toggle variant="link" id="dropdown-basic" className="text-white ml-auto">
-                  <img src='./images/MyNavbar/user.png' alt="User Icon" width={20} />
+                  <img src='./images/MyNavbar/user3.png' alt="User Icon" width={35} />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="#" className="btn-light rounded-3 mt-1 mb-1 border-1 border-secondary">
